@@ -1,348 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<title>Altiora Wellness Consulting</title>
-
-</style>
-
-</head>
-
-<body>
-
-<nav style="background: rgba(255,255,255,0.95); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-    <div style="max-width: 1100px; margin: auto; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center;">
-
-        <a href="#" style="font-weight: bold; color: #12345B; text-decoration: none;">
-            Altiora
-        </a>
-
-        <div style="display: flex; gap: 30px;">
-            <a href="#about" style="color: #1E2D3D; text-decoration: none;">About</a>
-            <a href="#services" style="color: #1E2D3D; text-decoration: none;">Services</a>
-            <a href="#who-we-support" style="color: #1E2D3D; text-decoration: none;">Who We Support</a>
-            <a href="#contact" style="color: #12345B; font-weight: bold;">Contact</a>
-        </div>
-
+<div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#who-we-support">Who We Support</a>
+        <a href="#contact">Contact</a>
     </div>
-</nav>
-
-<header> {
-    background: linear-gradient(
-        135deg,
-        #A7E8FF 0%,
-        #EAF7FC 60%,
-        #FFFFFF 100%
-    );
-    text-align: center;
-    padding: 60px 25px;
-}
-
-
-.logo img {
-    display: block;
-    margin: 0 auto;
-    max-width: 380px;
-    height: auto;
-}
-
-
-.tagline {
-
-    font-size: 26px;
-    margin-top: 15px;
-    color: #1E2D3D;
-
-}
-
-
-.button {
-
-    display: inline-block;
-    margin-top: 25px;
-    background: #12345B;
-    color: white;
-    padding: 14px 32px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-
-section {
-
-    max-width: 1100px;
-    margin: auto;
-    padding: 70px 25px;
-
-}
-
-
-h2 {
-
-    color: #12345B;
-    font-size:  36px;
-font-family: 'Playfair Display', serif;
-}
-
-
-.cards {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 25px;
-
-}
-
-
-.card {
-
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow:
-    0 8px 25px rgba(31,90,122,0.12);
-
-}
-
-
-.card h3 {
-
-    color:#12345B;
-
-}
-
-
-.highlight {
-
-    background:#EAF7FC;
-
-}
-
-
-.contact {
-
-    background:#12345B;
-    color:white;
-    border-radius:20px;
-
-}
-
-
-.contact h2 {
-
-    color:white;
-
-}
-
-
-.contact a {
-
-    color:#EAF7FC;
-    font-weight:bold;
-
-}
-
-footer {
-
-    background:#1E2D3D;
-    color:white;
-    text-align:center;
-    padding:30px;
-
-}
-
-
-
-@media(max-width:600px){
-
-.logo img {
-    max-width:260px;
-}
-
-h2 {
-    font-size:26px;
-}
-
-}
-
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<header>
-
-
+</div>
 <div class="logo">
-
-<img src="altiora-logo.png" 
-alt="Altiora Wellness Consulting Logo">
-
+    <img src="altiora-logo.png" alt="Altiora Wellness Consulting Logo">
 </div>
 
-
 <p class="tagline">
-Look Within, Rise Above.
+    Look Within, Rise Above.
 </p>
 
-
-<p>
-Wellness consulting, coaching, education, and program design
-services for individuals and organizations.
+<p class="hero-text">
+    Wellness consulting, coaching, education, and program design services for individuals and organizations.
 </p>
-
 
 <a class="button" href="mailto:info@altiorawellness.ca">
-Connect With Us
+    Connect With Us
 </a>
-
-
-</header>
-
-<nav style="background: rgba(255,255,255,0.95); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-    <div style="max-width: 1100px; margin: auto; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center;">
-
-        <!-- Left: Brand -->
-        <a href="#" style="font-weight: bold; color: #12345B; text-decoration: none;">
-            Altiora
-        </a>
-
-        <!-- Right: Links -->
-        <div style="display: flex; gap: 30px;">
-            <a href="#about" style="color: #1E2D3D; text-decoration: none;">About</a>
-            <a href="#services" style="color: #1E2D3D; text-decoration: none;">Services</a>
-            <a href="#who-we-support" style="color: #1E2D3D; text-decoration: none;">Who We Support</a>
-            <a href="#contact" style="color: #12345B; font-weight: bold;">Contact</a>
-        </div>
-
-    </div>
-</nav>
-<!-- NAV ENDS HERE -->
-
-<section id="about">
 <h2>About Altiora</h2>
 
 <p>
-
-In Latin, <em>altiora</em> means "higher things" or "deeper things,"
-reflecting our commitment to helping individuals and organizations
-pursue meaningful, lasting wellbeing.
-
-Altiora was founded on over 17 years of experience in addiction, mental health, and community support services. The work is grounded in frontline clinical practice, crisis intervention, and trauma-informed care within high-acuity environments.
-
-Experience includes leadership roles in shelter and community services, withdrawal management, and frontline support across health and social service systems. This background has built strong expertise in client-centered care, practical intervention, and supporting individuals through complex health and social challenges.
-
-Altiora is based on the belief that effective support must be practical, individualized, and rooted in real-world experience working with individuals, families, and communities.
-
+    In Latin, <em>altiora</em> means “higher things” or “deeper things,” reflecting our commitment to helping individuals and organizations pursue meaningful, lasting wellbeing.
 </p>
 
-</section>
-
-
-
-
-<section class="highlight">
-
-<h2>Our Services</h2>
+<br>
 
 <p>
-Altiora provides interventions, prevention plans, one-on-one, group, and family supports, as well as referrals. Services are grounded in practical, individualized strategies that support sustainable health outcomes. Each plan is tailored to meet the unique needs of the individual.
+    Altiora was founded on over 17 years of experience in addiction, mental health, and community support services. The work is grounded in frontline clinical practice, crisis intervention, and trauma-informed care within high-acuity environments.
 </p>
 
-</section>
+<br>
 
-
-
-
-<section>
-
-
-<h2>Who We Support</h2>
-
+<p>
+    Experience includes leadership roles in shelter and community services, withdrawal management, and frontline support across health and social service systems.
+</p>
+<h2>Our Services</h2>
 
 <div class="cards">
 
+    <div class="card">
+        <h3>Wellness Coaching</h3>
+        <p>Personalized support focused on wellbeing, resilience, and sustainable lifestyle change.</p>
+    </div>
 
-<div class="card">
+    <div class="card">
+        <h3>Consulting</h3>
+        <p>Practical wellness strategies for organizations, community programs, and service providers.</p>
+    </div>
 
-<h3>Individuals</h3>
-
-<p>
-Support for personal wellbeing, lifestyle improvement,
-and sustainable health goals.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>Organizations</h3>
-
-<p>
-Wellness solutions that help create healthier,
-more engaged workplace environments.
-</p>
+    <div class="card">
+        <h3>Education & Program Design</h3>
+        <p>Workshops, education, prevention planning, and customized wellness initiatives.</p>
+    </div>
 
 </div>
+<h2>Who We Support</h2>
 
+<div class="cards">
+
+    <div class="card">
+        <h3>Individuals</h3>
+        <p>Support for personal wellbeing, lifestyle improvement, and sustainable health goals.</p>
+    </div>
+
+    <div class="card">
+        <h3>Organizations</h3>
+        <p>Wellness solutions that help create healthier, more engaged workplace environments.</p>
+    </div>
 
 </div>
-
-
-</section>
-
-
-
-
-
-
-<section id="contact" class="contact">
-
-
-<h2>
-Let's Connect
-</h2>
-
+<h2>Let's Connect</h2>
 
 <p>
-Interested in wellness coaching, consulting,
-or creating a wellness initiative?
+    Interested in wellness coaching, consulting, or creating a wellness initiative?
 </p>
 
+<br>
 
 <p>
-Email:
-<a href="mailto:info@altiorawellness.ca">
-info@altiorawellness.ca
+    Email:
+    <a href="mailto:info@altiorawellness.ca">info@altiorawellness.ca</a>
+</p>
+
+<a class="button" href="mailto:info@altiorawellness.ca">
+    Book a Consultation
 </a>
-</p>
-
-
-</section>
-
-
-
-
-<footer>
-
-© 2026 Altiora Wellness Consulting
-
-</footer>
-
-
-
-</body>
-
-</html>
