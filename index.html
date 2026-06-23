@@ -199,6 +199,41 @@ footer{
         padding:0 10px;
     }
 
+}.founder-layout{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+    margin-top:20px;
+}
+
+.founder-image{
+    flex:0 0 420px;
+}
+
+.founder-image img{
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(31,90,122,0.12);
+    display:block;
+}
+
+.founder-content{
+    flex:1;
+}
+
+@media(max-width:768px){
+
+    .founder-layout{
+        flex-direction:column;
+    }
+
+    .founder-image{
+        flex:none;
+        width:100%;
+        max-width:350px;
+        margin:auto;
+    }
+
 }
 </style>
 
