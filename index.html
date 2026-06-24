@@ -235,6 +235,42 @@ footer{
     }
 
 }
+    /* Fish watermark bridge */
+
+#about{
+    position:relative;
+    overflow:visible;
+    z-index:1;
+}
+
+#about::after{
+    content:"";
+    position:absolute;
+
+    width:1400px;
+    height:800px;
+
+    background-image:url("fish-watermark.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+
+    left:50%;
+    bottom:-380px;
+
+    transform:translateX(-50%);
+
+    pointer-events:none;
+    z-index:-1;
+}
+
+#about h2,
+#about p,
+#why-altiora h2,
+#why-altiora p{
+    position:relative;
+    z-index:2;
+}
 </style>
 
 </head>
