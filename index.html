@@ -220,7 +220,41 @@ footer{
 .founder-content{
     flex:1;
 }
+#founder{
+    position:relative;
+    overflow:hidden;
+    padding:120px 60px;
+}
 
+#founder::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(255,255,255,0.92) 0%,
+            rgba(255,255,255,0.85) 35%,
+            rgba(255,255,255,0.35) 55%,
+            rgba(255,255,255,0.10) 100%
+        ),
+        url("founder-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    z-index:0;
+}
+
+#founder .founder-content,
+#founder h2,
+#founder ul{
+    position:relative;
+    z-index:2;
+    max-width:650px;
+}
 
 
 #about{
