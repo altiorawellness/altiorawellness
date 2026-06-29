@@ -279,11 +279,14 @@ footer{
 #about-wrapper{
     position:relative;
     overflow:hidden;
-    
-    padding:60px 0 120px;
+
+    background:#EAF7FC;
+
+    padding:80px 0 140px;
 }
 
 /* Fish watermark */
+
 #about-wrapper::before{
     content:"";
     position:absolute;
@@ -292,54 +295,33 @@ footer{
     background-image:url("fish-watermark.png");
     background-repeat:no-repeat;
     background-position:center center;
-    background-size:1200px auto;
+    background-size:min(1400px,90vw);
 
-    opacity:.14;
+    opacity:.16;
 
     pointer-events:none;
     z-index:0;
 }
 
-/* Soft fade into Founder section */
-#about-wrapper::after{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:120px;
-
-    background:linear-gradient(
-        to bottom,
-        rgba(234,247,252,0) 0%,
-        rgba(234,247,252,.35) 45%,
-        rgba(255,255,255,.92) 90%,
-        #ffffff 100%
-    );
-
-    pointer-events:none;
-    z-index:1;
-}
+/* About + Why content */
 
 #about,
 #why-altiora{
     position:relative;
     z-index:2;
+
     background:transparent;
+
+    max-width:1100px;
+    margin:auto;
 }
 
 #about{
-    padding-top:80px;
-    padding-bottom:40px;
+    padding:40px 25px 30px;
 }
 
 #why-altiora{
-    padding-top:20px;
-    padding-bottom:260px;
-}
-
-#why-altiora p{
-    margin-bottom:16px;
+    padding:10px 25px 80px;
 }
 
 #about h2,
@@ -349,40 +331,79 @@ footer{
     position:relative;
     z-index:2;
 }
-#founder{
-    position:relative;
-    overflow:visible;
-    padding:220px 60px 160px;
-    margin-top:-140px;
+
+#why-altiora p{
+    margin-bottom:18px;
 }
 
-#founder::before{
+/* Soft fade into Founder */
+
+#about-wrapper::after{
     content:"";
     position:absolute;
-    top:-160px;
+
     left:0;
     right:0;
     bottom:0;
 
+    height:140px;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(234,247,252,0) 0%,
+        rgba(234,247,252,.45) 45%,
+        rgba(255,255,255,.95) 100%
+    );
+
+    pointer-events:none;
+    z-index:1;
+}
+
+
+/* ===================================================
+   FOUNDER
+=================================================== */
+
+#founder{
+    position:relative;
+
+    overflow:hidden;
+
+    margin-top:-60px;
+
+    padding:180px 60px 160px;
+}
+
+/* Lake image */
+
+#founder::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
     background:
+
     linear-gradient(
-    to bottom,
-    rgba(255,255,255,1) 0%,
-    rgba(255,255,255,.98) 8%,
-    rgba(255,255,255,.92) 18%,
-    rgba(255,255,255,.75) 30%,
-    rgba(255,255,255,.45) 42%,
-    rgba(255,255,255,.15) 55%,
-    rgba(255,255,255,0) 72%
-),
-        linear-gradient(
-            to right,
-            rgba(255,255,255,0.82) 0%,
-            rgba(255,255,255,0.65) 35%,
-            rgba(255,255,255,0.18) 55%,
-            rgba(255,255,255,0.02) 100%
-        ),
-        url("lakes.jpeg");
+        to bottom,
+        rgba(255,255,255,1) 0%,
+        rgba(255,255,255,.96) 10%,
+        rgba(255,255,255,.82) 22%,
+        rgba(255,255,255,.45) 38%,
+        rgba(255,255,255,.10) 55%,
+        rgba(255,255,255,0) 70%
+    ),
+
+    linear-gradient(
+        to right,
+        rgba(255,255,255,.88) 0%,
+        rgba(255,255,255,.62) 34%,
+        rgba(255,255,255,.18) 58%,
+        rgba(255,255,255,0) 100%
+    ),
+
+    url("lakes.jpeg");
 
     background-size:cover;
     background-position:center;
@@ -390,75 +411,84 @@ footer{
 
     z-index:0;
 }
+
+/* Bottom fade */
+
 #founder::after{
+
     content:"";
+
     position:absolute;
+
     left:0;
     right:0;
     bottom:0;
-   height:120px;
 
-  background:linear-gradient(
-    to bottom,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,.20) 35%,
-    rgba(255,255,255,.55) 65%,
-    rgba(255,255,255,.88) 88%,
-    #ffffff 100%
-);
+    height:180px;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        rgba(255,255,255,0) 0%,
+
+        rgba(255,255,255,.35) 55%,
+
+        #ffffff 100%
+
+    );
+
+    z-index:1;
 
     pointer-events:none;
-    z-index:1;
 }
-#founder .founder-content,
+
 #founder h2,
+#founder .founder-content,
 #founder ul{
+
     position:relative;
+
     z-index:2;
+
     max-width:650px;
 }
+
+
+/* ===================================================
+   MOBILE
+=================================================== */
+
 @media (max-width:1024px){
 
+    #about-wrapper::before{
+
+        background-size:900px auto;
+    }
+
+    #about{
+
+        padding:40px 25px 25px;
+    }
+
+    #why-altiora{
+
+        padding:0 25px 60px;
+    }
+
     #founder{
-        padding:90px 40px;
+
+        margin-top:-30px;
+
+        padding:110px 30px 100px;
     }
 
     #founder::before{
-      background:
-    linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        rgba(255,255,255,.95) 8%,
-        rgba(255,255,255,.65) 18%,
-        rgba(255,255,255,0) 38%
-    ),
-    linear-gradient(
-        to right,
-        rgba(255,255,255,0.78) 0%,
-        rgba(255,255,255,0.55) 40%,
-        rgba(255,255,255,0.15) 65%,
-        rgba(255,255,255,0.02) 100%
-    ),
-    url("lakes.jpeg");
 
-        background-size:cover;
         background-position:60% center;
-        background-repeat:no-repeat;
     }
 
 }
-
-
-
-
-
-
-#about h2,
-#about p,
-#why-altiora h2,
-#why-altiora p{
-    position:relative;
-    z-index:2;
 }/* ==========================
    Scroll Fade Animation
 ========================== */
