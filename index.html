@@ -291,7 +291,31 @@ footer{
 #why-altiora p{
     margin-bottom:8px;
 }
+#why-altiora{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:120px;
+    background:#EAF7FC;
+}
 
+#why-altiora::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:140px;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(234,247,252,0) 0%,
+        rgba(234,247,252,.45) 45%,
+        rgba(255,255,255,.80) 80%,
+        #ffffff 100%
+    );
+
+    pointer-events:none;
+}
 #founder{
     position:relative;
     overflow:hidden;
