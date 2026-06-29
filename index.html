@@ -286,7 +286,6 @@ footer{
 }
 
 /* Fish watermark */
-
 #about-wrapper::before{
     content:"";
     position:absolute;
@@ -295,9 +294,12 @@ footer{
     background-image:url("fish-watermark.png");
     background-repeat:no-repeat;
     background-position:center center;
-    background-size:min(1400px,90vw);
 
-    opacity:.16;
+    /* Slightly larger */
+    background-size:1500px auto;
+
+    /* Much more visible */
+    opacity:.28;
 
     pointer-events:none;
     z-index:0;
