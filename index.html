@@ -114,7 +114,53 @@ header{
     margin-right:15px;
     font-weight:bold;
 }
+/* Premium Trust Chips */
 
+.trust-chips{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+    margin:35px 0 10px;
+}
+
+.trust-chip{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(18,52,91,.12);
+
+    border-radius:999px;
+
+    padding:10px 18px;
+
+    color:#12345B;
+
+    font-size:.95rem;
+    font-weight:600;
+
+    box-shadow:0 6px 18px rgba(18,52,91,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.trust-chip:hover{
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 22px rgba(18,52,91,.12);
+}
+
+.trust-chip span{
+    font-size:1rem;
+    color:#3C8D5A;
+}
 section{
     max-width:1100px;
     margin:auto;
