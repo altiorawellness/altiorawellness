@@ -600,6 +600,38 @@ footer{
         background-position:60% center;
     }
 
+/* ==========================
+   SERVICES BACKGROUND
+========================== */
+
+#services{
+    position:relative;
+    overflow:hidden;
+}
+
+#services::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,.88),
+        rgba(255,255,255,.88)
+    ),
+    url("services-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    z-index:0;
+}
+
+#services h2,
+#services .cards{
+    position:relative;
+    z-index:2;
 }
 /* ==========================
    Scroll Fade Animation
