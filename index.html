@@ -217,13 +217,38 @@ h2{
     margin-bottom:10px;
 }
 .card ul{
-    margin-top:15px;
-    padding-left:20px;
+    list-style:none;
+    padding:0;
+    margin-top:20px;
 }
 
 .card li{
-    margin-bottom:10px;
+    position:relative;
+    padding-left:34px;
+    margin-bottom:16px;
     line-height:1.6;
+}
+
+.card li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:2px;
+
+    width:22px;
+    height:22px;
+
+    border-radius:50%;
+
+    background:#3C8D5A;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:.75rem;
+    font-weight:bold;
 }
 .contact{
     background:#12345B;
@@ -607,7 +632,121 @@ footer{
 
 
 
+/* ==================================
+   SERVICES BACKGROUND
+================================== */
 
+#services{
+    position:relative;
+    overflow:hidden;
+    margin-top:-40px;
+    padding:180px 40px 150px;
+}
+
+#services::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        to bottom,
+        rgba(255,255,255,.98) 0%,
+        rgba(255,255,255,.94) 12%,
+        rgba(255,255,255,.80) 28%,
+        rgba(255,255,255,.48) 45%,
+        rgba(255,255,255,.22) 65%,
+        rgba(255,255,255,.12) 100%
+    ),
+
+    linear-gradient(
+        to right,
+        rgba(255,255,255,.82) 0%,
+        rgba(255,255,255,.45) 40%,
+        rgba(255,255,255,.12) 70%,
+        rgba(255,255,255,0) 100%
+    ),
+
+    url("services-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    z-index:0;
+}
+
+#services::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:180px;
+
+    background:linear-gradient(
+        to bottom,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,.45) 60%,
+        #ffffff 100%
+    );
+
+    z-index:1;
+}
+
+#services > *{
+
+    position:relative;
+    z-index:2;
+}
+    .services-intro{
+
+    max-width:760px;
+    margin:25px auto 35px;
+    text-align:center;
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+.service-badges{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:45px;
+}
+
+.service-badge{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:999px;
+
+    padding:10px 18px;
+
+    box-shadow:0 8px 18px rgba(18,52,91,.10);
+
+    font-weight:600;
+
+    color:#12345B;
+}
+
+.service-badge span{
+
+    color:#3C8D5A;
+    font-size:1rem;
+}
 /* ==========================
    Scroll Fade Animation
 ========================== */
@@ -801,6 +940,29 @@ footer{
 <section id="services">
 
 <h2>Our Services</h2>
+
+    <p class="services-intro">
+Whether you're navigating a personal challenge, supporting someone you care about, or strengthening your workplace or community, Altiora Wellness provides compassionate guidance, practical strategies, and experienced support tailored to your unique needs.
+</p>
+
+<div class="service-badges">
+
+<div class="service-badge">
+<span>✓</span>
+Personalized Support
+</div>
+
+<div class="service-badge">
+<span>✓</span>
+Practical Guidance
+</div>
+
+<div class="service-badge">
+<span>✓</span>
+17+ Years of Experience
+</div>
+
+</div>
 
 
 <div class="cards">
