@@ -131,40 +131,82 @@ header{
 }
 
 .trust-chip{
-    display:flex;
-    align-items:center;
-    gap:8px;
 
-    background:rgba(255,255,255,0.75);
-    backdrop-filter:blur(8px);
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+
+    background:rgba(255,255,255,.80);
+    backdrop-filter:blur(10px);
 
     border:1px solid rgba(18,52,91,.12);
 
-    border-radius:999px;
+    border-radius:18px;
 
-    padding:10px 18px;
+    padding:16px 18px;
 
-    color:#12345B;
+    max-width:260px;
 
-    font-size:.95rem;
-    font-weight:600;
+    box-shadow:0 8px 22px rgba(18,52,91,.08);
 
-    box-shadow:0 6px 18px rgba(18,52,91,.08);
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease;
+    transition:.25s ease;
 }
 
 .trust-chip:hover{
-    transform:translateY(-2px);
 
-    box-shadow:0 10px 22px rgba(18,52,91,.12);
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 28px rgba(18,52,91,.14);
 }
 
 .trust-chip span{
+
+    font-size:1.3rem;
+    line-height:1;
+}
+
+.trust-chip strong{
+
+    display:block;
+
+    color:#12345B;
+
     font-size:1rem;
-    color:#3C8D5A;
+
+    margin-bottom:4px;
+}
+
+.trust-chip small{
+
+    display:block;
+
+    font-size:.88rem;
+
+    color:#4A6075;
+
+    line-height:1.45;
+}
+
+.trust-chips-secondary{
+
+    margin-top:18px;
+}
+
+.trust-chips-secondary .trust-chip{
+
+    border-radius:999px;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    max-width:none;
+}
+
+.trust-chips-secondary .trust-chip strong,
+.trust-chips-secondary .trust-chip small{
+
+    display:none;
 }
 section{
     max-width:1100px;
@@ -802,13 +844,47 @@ footer{
     <strong>You don't have to navigate addiction, mental health, and life's challenges alone.</strong>
 </p>
 
-<p class="hero-text">
-    <strong>With over 17 years of frontline experience,</strong> Altiora Wellness provides compassionate guidance, personalized planning, and practical support to help individuals and families move forward with clarity and confidence.
-</p>
+
 
 
 
 <div class="trust-chips">
+
+    <div class="trust-chip">
+        <span>🧭</span>
+        <div>
+            <strong>Guidance</strong>
+            <small>Compassionate, practical advice</small>
+        </div>
+    </div>
+
+    <div class="trust-chip">
+        <span>📝</span>
+        <div>
+            <strong>Planning</strong>
+            <small>Personalized strategies</small>
+        </div>
+    </div>
+
+    <div class="trust-chip">
+        <span>🤝</span>
+        <div>
+            <strong>Support</strong>
+            <small>Every step of your journey</small>
+        </div>
+    </div>
+
+    <div class="trust-chip">
+        <span>🌱</span>
+        <div>
+            <strong>Confidence</strong>
+            <small>Building resilience for lasting change</small>
+        </div>
+    </div>
+
+</div>
+
+<div class="trust-chips trust-chips-secondary">
 
     <div class="trust-chip">
         <span>✓</span>
@@ -817,7 +893,7 @@ footer{
 
     <div class="trust-chip">
         <span>✓</span>
-      Licensed & Registered in British Columbia
+        Licensed & Registered in British Columbia
     </div>
 
     <div class="trust-chip">
