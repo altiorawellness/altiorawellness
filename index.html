@@ -62,11 +62,35 @@ nav{
 }
 
 .nav-links a{
-    text-decoration:none;
-    color:#1E2D3D;
-    font-weight:600;
-}
 
+    text-decoration:none;
+
+    color:#1E2D3D;
+
+    font-weight:600;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(234,247,252,.55);
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        box-shadow .25s ease,
+        transform .2s ease;
+}
+.nav-links a:hover{
+
+    background:#EAF7FC;
+
+    color:#12345B;
+
+    box-shadow:0 4px 12px rgba(18,52,91,.08);
+
+    transform:translateY(-1px);
+}
 header{
     background:linear-gradient(
         135deg,
